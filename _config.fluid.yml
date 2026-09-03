@@ -1,0 +1,52 @@
+# Fluid 主题配置覆盖文件
+
+# ---------------------------
+# 导航栏
+# ---------------------------
+navbar:
+  blog_title: "Miuk's Space"
+
+# ---------------------------
+# 首页
+# ---------------------------
+index:
+  banner_img: /img/default.png
+  slogan:
+    enable: true
+    text: "代码即诗，行胜于言。"
+    typing:
+      enable: true
+      loop: true
+
+# ---------------------------
+# 底部页脚
+# ---------------------------
+footer:
+  content: |
+    <a href="https://miuk-0713.github.io" target="_blank" rel="noopener">Miuk's Space</a>
+    &copy; 2024 Miuk
+    <br>
+    本站采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。
+
+# ---------------------------
+# 代码块
+# ---------------------------
+code:
+  copy_btn: true
+
+# ---------------------------
+# 搜索
+# ---------------------------
+search:
+  enable: true
+  path: /search.xml
+  field: post
+  content: true
+  format: html
+
+# ---------------------------
+# 关于页
+# ---------------------------
+about:
+  enable: true
+  banner_img: /img/default.png
