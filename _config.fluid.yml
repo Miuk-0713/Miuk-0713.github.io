@@ -33,6 +33,18 @@ footer:
     &copy; 2024 Miuk
     <br>
     本站采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。
+  statistics:
+    enable: true
+    source: "busuanzi"
+    pv_format: "总访问量 {} 次"
+    uv_format: "总访客数 {} 人"
+
+# ---------------------------
+# Web 分析
+# ---------------------------
+web_analytics:
+  enable: true
+  follow_dnt: true
 
 # ---------------------------
 # 代码块
@@ -57,6 +69,13 @@ post:
   comments:
     enable: true
     type: giscus
+  meta:
+    wordcount:
+      enable: true
+      format: "{} 字"
+    min2read:
+      enable: true
+      format: "{} 分钟"
 
 giscus:
   repo: 'Miuk-0713/Miuk-0713.github.io'
