@@ -51,6 +51,27 @@ search:
   format: html
 
 # ---------------------------
+# 文章评论
+# ---------------------------
+post:
+  comments:
+    enable: true
+    type: giscus
+
+giscus:
+  repo: 'Miuk-0713/Miuk-0713.github.io'
+  repo_id: 'R_kgDOUNH9qQ'
+  category: 'General'
+  category_id: 'DIC_kwDOUNH9qc4DEzIw'
+  mapping: 'pathname'
+  reactions_enabled: '1'
+  emit_metadata: '0'
+  input_position: 'top'
+  theme: 'light'
+  dark_theme: 'dark'
+  lang: 'zh-CN'
+
+# ---------------------------
 # 关于页
 # ---------------------------
 about:
