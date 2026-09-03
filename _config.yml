@@ -3,17 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+# Site
+title: Miuk's Space          # 浏览器标签页标题 / 网站主标题
+subtitle: 探索技术与生活      # 首页打字机展示的副标题
+description: 个人技术博客    # 站点简介（用于搜索引擎收录）
+keywords: 软件工程, 博客     # 搜索关键词
+author: Miuk                 # 博客作者名称
+language: zh-CN              # 界面语言
+timezone: Asia/Shanghai      # 时区
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://miuk-0713.github.io
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -102,3 +104,9 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+# 搜索插件配置
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
