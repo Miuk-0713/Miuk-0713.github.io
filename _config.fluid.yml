@@ -60,15 +60,15 @@ post:
 
 giscus:
   repo: 'Miuk-0713/Miuk-0713.github.io'
-  repo_id: 'R_kgDOUNH9qQ'
+  repo-id: 'R_kgDOUNH9qQ'
   category: 'General'
-  category_id: 'DIC_kwDOUNH9qc4DEzIw'
+  category-id: 'DIC_kwDOUNH9qc4DEzIw'
   mapping: 'pathname'
-  reactions_enabled: '1'
-  emit_metadata: '0'
-  input_position: 'top'
-  theme: 'light'
-  dark_theme: 'dark'
+  reactions-enabled: 1
+  emit-metadata: 0
+  input-position: 'top'
+  theme-light: 'light'
+  theme-dark: 'dark'
   lang: 'zh-CN'
 
 # ---------------------------
