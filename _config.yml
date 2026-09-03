@@ -110,3 +110,22 @@ search:
   field: post
   content: true
   format: html
+
+# Fluid 评论核心设置（强制写入主配置，权重最高）
+theme_config:
+  post:
+    comments:
+      enable: true
+      type: giscus
+  giscus:
+    repo: 'Miuk-0713/Miuk-0713.github.io'
+    repo-id: 'R_kgDOUNH9qQ'
+    category: 'General'
+    category-id: 'DIC_kwDOUNH9qc4DEzIw'
+    mapping: 'pathname'
+    reactions-enabled: 1
+    emit-metadata: 0
+    input-position: 'top'
+    theme-light: 'light'
+    theme-dark: 'dark'
+    lang: 'zh-CN'

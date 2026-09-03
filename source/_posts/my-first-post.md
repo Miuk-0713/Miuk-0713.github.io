@@ -6,6 +6,7 @@ tags:
   - 博客搭建
 categories:
   - 技术分享
+comments: true
 ---
 
 ## 欢迎来到我的个人博客

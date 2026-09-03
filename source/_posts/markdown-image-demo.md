@@ -9,6 +9,7 @@ categories:
   - 技术折腾
   - 博客技巧
 excerpt: 详解 Hexo post_asset_folder 机制，实现文章与图片的一体化管理，告别路径烦恼。
+comments: true
 ---
 
 ## 什么是 Post Asset Folder？

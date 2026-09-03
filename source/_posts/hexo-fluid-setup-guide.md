@@ -10,6 +10,7 @@ categories:
   - 技术折腾
   - 网站建设
 excerpt: 记录基于 Hexo 框架与 Fluid 主题搭建个人独立博客、配置自动化流水线及个性化定制的完整实践。
+comments: true
 ---
 
 ## 一、架构选型背景
