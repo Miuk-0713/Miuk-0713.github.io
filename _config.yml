@@ -111,6 +111,19 @@ search:
   content: true
   format: html
 
+# markdown-it-plus 渲染器配置
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+  plugins:
+    - plugin:
+        name: markdown-it-katex
+        enable: true
+
 # Fluid 评论核心设置（强制写入主配置，权重最高）
 theme_config:
   post:
