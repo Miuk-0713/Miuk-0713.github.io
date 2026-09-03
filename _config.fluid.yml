@@ -1,6 +1,12 @@
 # Fluid 主题配置覆盖文件
 
 # ---------------------------
+# 全局图标
+# ---------------------------
+favicon: /img/favicon.svg
+apple_touch_icon: /img/favicon.svg
+
+# ---------------------------
 # 导航栏
 # ---------------------------
 navbar:
@@ -50,3 +56,4 @@ search:
 about:
   enable: true
   banner_img: /img/default.png
+  avatar: /img/avatar.svg
