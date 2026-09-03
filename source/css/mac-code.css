@@ -1,0 +1,42 @@
+.markdown-body figure.highlight,
+.markdown-body .code-wrapper {
+  position: relative;
+}
+
+.markdown-body figure.highlight::before,
+.markdown-body .code-wrapper::before {
+  content: "";
+  display: block;
+  height: 0.65rem;
+  background-color: var(--highlight-bg-color, #f6f8fa);
+  border-radius: 4px 4px 0 0;
+  position: relative;
+  top: 0;
+  margin-bottom: -0.65rem;
+  z-index: 0;
+}
+
+.markdown-body figure.highlight::after,
+.markdown-body .code-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0.22rem;
+  left: 0.85rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background-color: #fc625d;
+  box-shadow: 0.75rem 0 0 #fdbc40, 1.5rem 0 0 #35cd4b;
+  z-index: 2;
+}
+
+.markdown-body figure.highlight pre,
+.markdown-body .code-wrapper pre {
+  border-radius: 0 0 4px 4px;
+  padding-top: 1.8rem !important;
+}
+
+[data-user-color-scheme="dark"] .markdown-body figure.highlight::before,
+[data-user-color-scheme="dark"] .markdown-body .code-wrapper::before {
+  background-color: var(--highlight-bg-color, #1e1e1e);
+}

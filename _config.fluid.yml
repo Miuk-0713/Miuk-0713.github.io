@@ -50,7 +50,27 @@ web_analytics:
 # 代码块
 # ---------------------------
 code:
-  copy_btn: true
+  copy:
+    enable: true
+    highlight: "复制成功"
+  highlight:
+    enable: true
+    line_number: true
+    lib: "highlightjs"
+    bg_color: false
+  mac_window: true
+
+# ---------------------------
+# 自定义样式（Mac 风格代码块圆点）
+# ---------------------------
+custom_css:
+  - /css/mac-code.css
+
+# ---------------------------
+# 自定义脚本（KaTeX 自动渲染）
+# ---------------------------
+custom_js:
+  - /js/katex-auto-render.js
 
 # ---------------------------
 # 搜索
@@ -76,6 +96,10 @@ post:
     min2read:
       enable: true
       format: "{} 分钟"
+  math:
+    enable: true
+    specific: false
+    engine: "katex"
 
 giscus:
   repo: 'Miuk-0713/Miuk-0713.github.io'
