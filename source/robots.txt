@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Disallow: /write/
+Disallow: /files/
+
+Sitemap: https://miuk-0713.github.io/sitemap.xml

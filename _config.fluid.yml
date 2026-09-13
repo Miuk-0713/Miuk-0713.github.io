@@ -7,6 +7,14 @@ favicon: /img/favicon.svg
 apple_touch_icon: /img/favicon.svg
 
 # ---------------------------
+# 暗黑模式
+# ---------------------------
+dark_mode:
+  enable: true
+  auto: true
+  toggle: true
+
+# ---------------------------
 # 导航栏
 # ---------------------------
 navbar:
@@ -87,6 +95,14 @@ search:
 # 文章评论
 # ---------------------------
 post:
+  progress:
+    enable: true
+  copyright:
+    enable: true
+    license: CC BY-NC-SA 4.0
+    license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+    author: Miuk
+    link: true
   comments:
     enable: true
     type: giscus
