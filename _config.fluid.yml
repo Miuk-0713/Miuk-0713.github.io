@@ -24,6 +24,7 @@ navbar:
     - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - { key: "写文章", link: "/write/", icon: "iconfont icon-articles", name: "写文章" }
 
@@ -34,7 +35,10 @@ index:
   banner_img: /img/default.png
   slogan:
     enable: true
-    text: "代码即诗，行胜于言。"
+    text:
+      - "探索大模型工程、深度学习与自主智能体的技术边界"
+      - "Code the Future with LLMs & Modern AI Architecture"
+      - "Talk is cheap. Show me the weights and code."
     typing:
       enable: true
       loop: true
@@ -143,3 +147,48 @@ about:
   enable: true
   banner_img: /img/default.png
   avatar: /img/avatar.svg
+
+# ---------------------------
+# 404 错误页
+# ---------------------------
+page404:
+  enable: true
+  banner_img: /img/default.png
+  banner_img_height: 85
+  banner_mask_alpha: 0.3
+  redirect_delay: 5000
+
+# ---------------------------
+# 友链页
+# ---------------------------
+links:
+  enable: true
+  banner_img: /img/default.png
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  items:
+    - {
+      title: "Hugging Face",
+      intro: "The AI community building the future.",
+      link: "https://huggingface.co",
+      avatar: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg"
+    }
+    - {
+      title: "LangChain",
+      intro: "Building context-aware LLM applications.",
+      link: "https://www.langchain.com",
+      avatar: "https://avatars.githubusercontent.com/u/126733545?s=200&v=4"
+    }
+    - {
+      title: "PyTorch",
+      intro: "An open source machine learning framework.",
+      link: "https://pytorch.org",
+      avatar: "https://avatars.githubusercontent.com/u/146031722?s=200&v=4"
+    }
+    - {
+      title: "GitHub",
+      intro: "Where the world builds software.",
+      link: "https://github.com",
+      avatar: "https://avatars.githubusercontent.com/u/583231?s=200&v=4"
+    }
+  onerror_avatar: /img/avatar.svg
