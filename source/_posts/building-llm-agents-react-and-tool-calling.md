@@ -48,6 +48,18 @@ Thought 3: 北京 32°C - 上海 28°C = 4°C，可以给出最终答案。
 Answer: 北京明天的气温比上海高 4°C（北京 32°C，上海 28°C）。
 ```
 
+### 2.1.1 ReAct 思考回路架构图
+
+```mermaid
+graph LR
+    A[用户 Query] --> B(意图识别)
+    B --> C{是否调用工具?}
+    C -- 是 --> D[执行 Tool Action]
+    D --> E[环境 Observation]
+    E --> B
+    C -- 否 --> F[生成最终回答]
+```
+
 ### 2.2 ReAct vs CoT vs Act-only
 
 | 方法 | 推理 | 行动 | 优势 | 劣势 |

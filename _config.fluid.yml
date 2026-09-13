@@ -117,6 +117,11 @@ post:
     enable: true
     specific: false
     engine: "katex"
+  mermaid:
+    enable: true
+    specific: false
+    options:
+      theme: 'default'
 
 giscus:
   repo: 'Miuk-0713/Miuk-0713.github.io'

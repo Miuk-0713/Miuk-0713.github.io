@@ -13,6 +13,7 @@ excerpt: 从 RAG 核心痛点出发，系统讲解文档解析切分、向量化
 index_img: /img/posts/default-cover.png
 math: false
 comments: true
+sticky: 100
 ---
 
 ## 1、RAG 核心痛点与行业背景
@@ -24,14 +25,14 @@ comments: true
 
 **检索增强生成（Retrieval-Augmented Generation, RAG）** 的核心思想是：在生成回答前，先从外部知识库中检索与用户问题相关的事实片段，将其注入 LLM 的上下文窗口，使模型的回答「有据可依」。
 
-```
-用户 Query
-    ↓
-[检索器 Retriever] → 从知识库召回 Top-K 相关文档片段
-    ↓
-[构建 Prompt] = System Prompt + 检索上下文 + User Query
-    ↓
-[LLM Generator] → 基于增强上下文生成回答
+```mermaid
+graph TD
+    Q[用户 Query] --> R[检索器 Retriever]
+    R --> V[(向量数据库)]
+    V --> |Top-K 相关片段| P[构建增强 Prompt]
+    P --> L[LLM Generator]
+    L --> A[生成回答]
+    P --> |System Prompt + 检索上下文 + Query| L
 ```
 
 ## 2、文档解析与切分策略
