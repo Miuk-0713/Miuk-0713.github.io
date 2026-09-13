@@ -88,4 +88,34 @@
 .write-status-bar{display:flex;justify-content:space-between;align-items:center;padding:8px 0;font-size:.82rem;color:var(--w-text-secondary);border-top:1px solid var(--w-border);margin-top:16px}
 .write-frontmatter-preview{display:none;margin-top:16px;padding:16px;background:var(--w-bg);border:1px solid var(--w-border);border-radius:8px;font-family:"SFMono-Regular",Consolas,monospace;font-size:.82rem;line-height:1.6;white-space:pre-wrap;word-break:break-all;max-height:300px;overflow:auto}
 .write-frontmatter-preview.active{display:block}
-@media(max-width:640px){.write-row{grid-template-columns:1fr}.write-card{padding:20px 16px}.write-actions{flex-direction:column}.write-btn{justify-content:center}}
+.write-drop-zone{border:2px dashed var(--w-border);border-radius:10px;padding:32px 20px;text-align:center;cursor:pointer;transition:all .25s;background:var(--w-bg);position:relative}
+.write-drop-zone:hover,.write-drop-zone.dragover{border-color:var(--w-primary);background:var(--w-primary-light)}
+.write-drop-zone.dragover{transform:scale(1.01)}
+.write-drop-zone-inner{pointer-events:none}
+.write-drop-zone .drop-icon{width:40px;height:40px;stroke:var(--w-primary);margin-bottom:8px;opacity:.7}
+.write-drop-zone .drop-text{font-size:.95rem;color:var(--w-text);margin:0 0 4px}
+.write-drop-zone .drop-text .drop-link{color:var(--w-primary);font-weight:600;text-decoration:underline;cursor:pointer}
+.write-drop-zone .drop-hint{font-size:.8rem;color:var(--w-text-secondary);margin:0}
+.write-import-status{margin-top:12px;font-size:.85rem;color:var(--w-success);display:none}
+.write-import-status.show{display:block}
+.write-import-status.error{color:var(--w-danger)}
+.doc-embed-wrap{margin:2em 0}
+.doc-embed-wrap iframe,.doc-embed-wrap embed{width:100%;height:600px;border:1px solid var(--w-border);border-radius:8px;box-shadow:var(--w-shadow)}
+.doc-download-card{display:flex;align-items:center;gap:16px;background:var(--w-card);border:1px solid var(--w-border);border-radius:12px;padding:20px 24px;margin:1.5em 0;box-shadow:var(--w-shadow);transition:box-shadow .2s,transform .2s}
+.doc-download-card:hover{box-shadow:var(--w-shadow-lg);transform:translateY(-2px)}
+.doc-download-icon{flex-shrink:0;width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.doc-download-icon.pdf{background:#fef2f2;color:#dc2626}
+.doc-download-icon.docx{background:#eff6ff;color:#2563eb}
+.doc-download-icon.zip{background:#fefce8;color:#ca8a04}
+.doc-download-icon.default{background:var(--w-primary-light);color:var(--w-primary)}
+[data-color-scheme="dark"] .doc-download-icon.pdf{background:#450a0a;color:#f87171}
+[data-color-scheme="dark"] .doc-download-icon.docx{background:#172554;color:#60a5fa}
+[data-color-scheme="dark"] .doc-download-icon.zip{background:#422006;color:#fbbf24}
+.doc-download-info{flex:1;min-width:0}
+.doc-download-name{font-size:1rem;font-weight:600;color:var(--w-text);margin:0 0 4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.doc-download-meta{font-size:.82rem;color:var(--w-text-secondary);margin:0}
+.doc-download-btn{flex-shrink:0;display:inline-flex;align-items:center;gap:6px;padding:8px 20px;font-size:.88rem;font-weight:600;border:none;border-radius:8px;cursor:pointer;transition:all .2s;text-decoration:none;font-family:inherit}
+.doc-download-btn.primary{background:var(--w-primary);color:#fff}
+.doc-download-btn.primary:hover{background:var(--w-primary-hover)}
+.doc-download-btn svg{width:16px;height:16px}
+@media(max-width:640px){.write-row{grid-template-columns:1fr}.write-card{padding:20px 16px}.write-actions{flex-direction:column}.write-btn{justify-content:center}.doc-download-card{flex-direction:column;text-align:center}.doc-download-btn{width:100%;justify-content:center}}

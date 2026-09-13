@@ -9,12 +9,30 @@ comments: false
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mammoth@1.6.0/mammoth.browser.min.js"></script>
 
 <div class="write-wrap">
 <div class="write-hero">
 <h1>在线写作台</h1>
 <p>撰写 Markdown 文章，一键发布到 GitHub Pages</p>
 </div>
+
+<div class="write-card">
+<div class="write-card-title">
+<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+导入外部文档
+</div>
+<div class="write-drop-zone" id="w-drop-zone">
+<div class="write-drop-zone-inner">
+<svg class="drop-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+<p class="drop-text">拖拽文件到此处，或 <span class="drop-link">点击选择</span></p>
+<p class="drop-hint">支持 .docx / .md / .txt 格式</p>
+</div>
+<input type="file" id="w-file-input" accept=".docx,.md,.txt,.markdown" style="display:none">
+<div class="write-import-status" id="w-import-status"></div>
+</div>
+</div>
+
 <div class="write-card">
 <div class="write-card-title">
 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
