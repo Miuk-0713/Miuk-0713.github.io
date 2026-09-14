@@ -164,3 +164,38 @@ sitemap:
   rel: false
   tags: true
   categories: true
+
+# ---------------------------
+# 静态资源全量压缩（hexo-all-minifier）
+# ---------------------------
+html_minifier:
+  enable: true
+  ignore_error: false
+  remove_comments: true
+  remove_empty_attributes: true
+  remove_comments_from_cdata: true
+  collapse_whitespace: true
+  collapse_boolean_attributes: true
+  minify_js: true
+  minify_css: true
+
+css_minifier:
+  enable: true
+  exclude:
+    - '*.min.css'
+
+js_minifier:
+  enable: true
+  mangle: true
+  output:
+    comments: false
+  compress:
+    drop_console: false
+  exclude:
+    - '*.min.js'
+
+image_minifier:
+  enable: true
+  interlaced: true
+  multipass: true
+  optimizationLevel: 7
